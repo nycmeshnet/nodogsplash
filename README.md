@@ -30,7 +30,11 @@ With ssh, enable and start the splash
 /etc/init.d/nodogsplash start
 ```
 
-The config file only has one change at the moment:
+Connect to the router by wifi and you should now get the splash. Different OS's handle splash screens differently. In Android it appears in the message center. If the splash appears in the browser it will take you to nycmesh.net when you click on it.
+
+
+The config file only has one change at the moment. It is just a bit faster to copy the file rather than edit it. If you want to edit then here is the change:
+
 ```
 # If RedirectURL is set, the user is redirected to this URL instead.
 # 
