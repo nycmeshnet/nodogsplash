@@ -21,7 +21,7 @@ opkg install --force-depends nodogsplash
 Copy the files from your computer to the router-
 ```
 scp splash.html root@172.30.22.1:/etc/nodogsplash/htdocs/splash.html
-scp nodogsplash.conf root@10.30.43.1:/etc/nodogsplash/nodogsplash.conf
+scp nodogsplash.conf root@172.30.22.1:/etc/nodogsplash/nodogsplash.conf
 ```
 
 With ssh, enable and start the splash
