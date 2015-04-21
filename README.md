@@ -26,8 +26,7 @@ scp nodogsplash.conf root@10.30.43.1:/etc/nodogsplash/nodogsplash.conf
 
 
 // The config file only has one change at the moment:
-//# If RedirectURL is set, the user is redirected to this URL instead.
-//# 
+
 RedirectURL http://nycmesh.net/
 
 
