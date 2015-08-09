@@ -38,7 +38,8 @@ The config file has two changes. It is just a bit faster to copy the file rather
 ```
 # need to allow 10.x.x.x for the .mesh domains
 #  FirewallRule block to 10.0.0.0/8
-...
+```
+```
 # If RedirectURL is set, the user is redirected to this URL instead.
 # 
 RedirectURL http://nycmesh.net/
@@ -48,13 +49,11 @@ There is a bug launching nodogsplash on startup in qMp. Nodogsplash will only la
 
 ```
 start_service() {
-...
 	# NYC Mesh workaround- nodogsplash is not happy launching immediately at startup
 	echo "   Sleep for 20 seconds"
 	sleep 20
 
 	if test_module ;  then
-...
 ```
 If you copy the init file make sure to chmod 755 (-rwxr-xr-x)
 ```
