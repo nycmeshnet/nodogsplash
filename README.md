@@ -33,7 +33,7 @@ With ssh, enable and start the splash
 Connect to the router by wifi and you should now get the splash. Different OS's handle splash screens differently. In Android it appears in the message center. If the splash appears in the browser it will take you to nycmesh.net when you click on it.
 
 
-The config file has two changes. It is just a bit faster to copy the file rather than edit it. If you want to edit then here are the changes:
+The config file has two changes. Here are the changes:
 
 ```
 # need to allow 10.x.x.x for the .mesh domains
@@ -41,11 +41,10 @@ The config file has two changes. It is just a bit faster to copy the file rather
 ```
 ```
 # If RedirectURL is set, the user is redirected to this URL instead.
-# 
 RedirectURL http://nycmesh.net/
 ```
 
-There is a bug launching nodogsplash on startup in qMp. Nodogsplash will only launch correctly if it is started > 10 seconds after booting. To work around this you can edit the init file and add sleep 20 
+There is a bug launching nodogsplash on startup in qMp. Nodogsplash will only launch correctly if it is started more than 10 seconds after booting. To work around this you can edit the init file- /etc/init.d/nodogsplash and add sleep 20 
 
 ```
 start_service() {
@@ -59,8 +58,6 @@ If you copy the init file make sure to chmod 755 (-rwxr-xr-x)
 ```
 chmod 0755 /etc/init.d/nodogsplash
 ```
-
-
 
 Nodogsplash package provides the ndsctl binary to manage it. Run ndsctl without arguments to see the help.
 
