@@ -1,6 +1,6 @@
 # nodogsplash
 
-NYC Mesh splash page. Currently does not work with NanoStation NSM5XW!
+NYC Mesh splash page. This is old documentation. The splash is now part of our firmware and doesn't need to be installed separately. These instructions are for adding to a qMp or plain OpenWrt install.
 
 The files live here on the router:
 
